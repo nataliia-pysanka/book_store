@@ -5,61 +5,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>THE OLD BOOKSHELF</title>
-    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"/>
+    
+      <link rel="stylesheet" href="../static/styles.css" />
   </head>
 
   <body>
-    <header>
-      <nav>
-        <a href="#">
-          <h1 lang="en">The old bookshelf</h1>
+    <header class="page-header">
+      <nav class="container nav">
+        <a href="#" class="logo">The old bookshelf
         </a>
-
-        <ul>
-          <li>
+        <ul class="site-nav list">
+          <li class="item">
             <a href="../cart/index.html"><img src="../static/images/cart.svg" alt="cart" height="24px"></a>
           </li>
-          <li>
-            <a href="../signin/index.html">Sign out</a>
-          </li>
-          <li>
+          <li class="item">
             <img src="../static/images/avatar.png" alt="avatar" height="24px">
           </li>
-          <li>
-            <a href="#">Username</a>
+          <li class="item">
+            <a href="#" class="link">Username</a>
+          </li>
+          <li class="item">
+            <a href="../signin/index.html" class="btn btn-blue">Sign out</a>
           </li>
         </ul>
       </nav>
     </header>
 
+
     <main>
-      <img src="../static/images/placeholder.png" alt="book" width="200px">
-      <ul>
-        <li>
-          <p><span>Назва: </span>Багряний колір вічності</p>
-        </li>
-        <li>
-          <p><span>Автор: </span>Наталія Гурницька</p>
-        </li>
-        <li>
-          <p><span>Видавництво: </span>Клуб сімейного дозвілля</p>
-        </li>
-        <li>
-          <p><span>Рік видання: </span>2019</p>
-        </li>
-        <li>
-          <p><span>Кількість сторінок: </span>192</p>
-        </li>
-      </ul>
+      <div class="container book">
+        <div class="book-img">
+          <img src="../static/images/book.jpeg" alt="book" width="300px">
+          <!-- <img src="../static/images/placeholder.png" alt="book" width="300px"> -->
+        </div>
 
-      <div>
-        <p><span>Ціна, &#x20B4;</span>170</p>
-        <p><span>Кількість</span></p><input type="number" min="0" value="1" name="book_count" id="book_count">
-        <p><span>Загальна вартість, &#x20B4;</span>170</p>
-        <input type="button" value="Купити">
+        <ul class="book-info list">
+          <li class="item">
+            <p><span>Назва: </span>Багряний колір вічності</p>
+          </li>
+          <li class="item">
+            <p><span>Автор: </span>Наталія Гурницька</p>
+          </li>
+          <li class="item">
+            <p><span>Видавництво: </span>Клуб сімейного дозвілля</p>
+          </li>
+          <li class="item">
+            <p><span>Рік видання: </span>2019</p>
+          </li>
+          <li class="item">
+            <p><span>Кількість сторінок: </span>192</p>
+          </li>
+        </ul>
+
+        <div class="book-counting">
+          <p id="book_price"><span>Ціна, &#x20B4;</span>170</p>
+          <label for="book_count">Кількість</label >
+            <input type="number" min="0" value="1" name="book_count" id="book_count">
+          <p id="book_total"><span>Загальна вартість, &#x20B4;</span>170</p>
+          <button class="btn btn-green">Купити</button>
+        </div>
       </div>
-
-      <p>У Львові сучасному, Львові передвоєнному і Львові часів Першої світової війни відбуваються драматичні події, народжуються родинні таємниці й перетинаються долі героїв цього роману. Ірена — юна наївна гімназистка із заможної родини. Доля дарує їй трагічне кохання, яке вривається в її спокійне життя вихором перших глибоких почуттів, сильних емоцій та чуттєвих насолод. Життя кидає Ірену в лихоліття війни, жорна сталінських репресій і на заслання в Казахстан. Яку ціну доведеться заплатити дівчині за своє щастя та любов? Чи зуміє вона вистояти, не зламатися і зберегти у собі світло добра й любові? Як та чому поєдналися історія кохання Ірени з долею та життям Анни з роману «Мелодії кави в тональності кардамону»?</p>
-      </main>
+      <div class="container book-description">
+        <p>У Львові сучасному, Львові передвоєнному і Львові часів Першої світової війни відбуваються драматичні події, народжуються родинні таємниці й перетинаються долі героїв цього роману. Ірена — юна наївна гімназистка із заможної родини. Доля дарує їй трагічне кохання, яке вривається в її спокійне життя вихором перших глибоких почуттів, сильних емоцій та чуттєвих насолод. Життя кидає Ірену в лихоліття війни, жорна сталінських репресій і на заслання в Казахстан. Яку ціну доведеться заплатити дівчині за своє щастя та любов? Чи зуміє вона вистояти, не зламатися і зберегти у собі світло добра й любові? Як та чому поєдналися історія кохання Ірени з долею та життям Анни з роману «Мелодії кави в тональності кардамону»?</p>
+      </div>
+    </main>
   </body>
 </html>
