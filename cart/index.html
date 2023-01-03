@@ -34,28 +34,40 @@
     </header>
 
     <main>
-      <input type="button" value="Купити">
       <!-- empty cart -->
-      <img width="200px"src="../static/images/cart.svg" alt="cart">
+      <div class="container">
+        <div class="empty-cart">
+          <img height="200px" src="../static/images/cart.svg" alt="cart">
+          <p>Cart empty...</p>
+        </div>
+      </div>
+
       <!-- full cart -->
-      <ul>
-        <li>
-          <p>Назва книги</p>
-          <p>Кількість</p>
-          <p>Загальна ціна</p>
-        </li>
-        <li>
-          <p>Назва книги</p>
-          <p>Кількість</p>
-          <p>Загальна ціна</p>
-        </li>
-        <li>
-          <p>Назва книги</p>
-          <p>Кількість</p>
-          <p>Загальна ціна</p>
-        </li>
-      </ul>
-      <p>Загальна ціна, <span>170</span> грн</p>
+      <div class="container">
+        <div class="full-cart">
+          <button class="btn btn-green btn-buy">Купити</button>
+          <ul class="list cart-list">
+            <li class="item">
+              <p>Назва книги</p>
+              <p>Кількість</p>
+              <p>Загальна ціна</p>
+            </li>
+            <li class="item">
+              <p>Назва книги</p>
+              <p>Кількість</p>
+              <p>Загальна ціна</p>
+            </li>
+            <li class="item">
+              <p>Назва книги</p>
+              <p>Кількість</p>
+              <p>Загальна ціна</p>
+            </li>
+          </ul>
+          <p class="total-price">Загальна ціна, <span>170</span> грн</p>
+          <button class="btn btn-green btn-buy">Купити</button>
+        </div>
+        
+      </div>
     </main>
   </body>
 </html>
