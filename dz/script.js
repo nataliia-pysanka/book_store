@@ -1,5 +1,5 @@
 const controls = document.querySelector(".controls");
-
+target = document.que
 controls.addEventListener("click", (e) => {
 if (e.target === e.currentTarget) {
 return;
